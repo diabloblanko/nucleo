@@ -5,5 +5,5 @@
 int main() {
     printf("Name = startmain::RInit.Service");
     sleep(3);
-    system("./rootfs/usr/src/shell");
+    system("./rootfs/usr/src/rinit/shell");
 }

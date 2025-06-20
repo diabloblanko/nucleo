@@ -20,16 +20,15 @@ rm .init.conf && echo "neoinit" > .init.conf
 rm .init.conf && echo "rinit" > .init.conf
 ```
 ## After choosing init
-```bash
 To run Nucleo, execute command below
 ```bash
 ./run
 ```
 ## Choosing Init
 You can choose of two different inits: NeoInit and RInit
-NOTE: NeoInit and RInit have a bit different shell.
 ### NeoInit
 Pros:
+* C-Written shell, if you are into it.
 * Simple
 * Lightweight
 * Easy service managing tools
@@ -38,10 +37,10 @@ Cons:
 * May be not enough functions
 ### RInit
 Pros:
+* Python-written shell, if you are into it.
 * Fast
 * Working with blocks
 * C-Written
-
 Cons:
 * Bigger than NeoInit
 * No service managing tools

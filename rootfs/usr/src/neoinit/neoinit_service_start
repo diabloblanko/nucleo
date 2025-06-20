@@ -1,0 +1,4 @@
+echo "NeoInit::Log::Initializing services..."
+chmod +x ./rootfs/bin/*
+chmod +x ./rootfs/etc/neoinit/bin/*
+./rootfs/etc/neoinit/bin/*

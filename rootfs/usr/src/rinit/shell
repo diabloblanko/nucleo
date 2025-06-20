@@ -1,0 +1,14 @@
+#!/bin/python3
+import os
+
+while True:
+    f_read = open("./rootfs/etc/hostname")
+    f = f_read.read()
+    cmd = input(f"root@{f}::> ")
+    if cmd == "exit":
+        break
+    else:
+        try:
+            os.system(f"./rootfs/bin/{cmd}")
+        except Exception as e:
+            print("command not found")

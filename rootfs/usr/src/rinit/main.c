@@ -8,7 +8,10 @@
 #include <stdbool.h>
 
 #define BLOCKS_DIR "./rootfs/dev/blocks"
-#define START_FILE "./rootfs.dev/blocks/startmain"
+#define ADDNOS_ONE "./rootfs/dev/blocks/addons/addons1"
+#define ADDNOS_SEC "./rootfs/dev/blocks/addons/addons2"
+#define ADDNOS_THR "./rootfs/dev/blocks/addons/addons3"
+#define START_FILE "./rootfs/dev/blocks/startmain"
 #define MAX_BLOCKS 32
 #define MIN_DELAY 100000  // 0.1s in microseconds
 #define MAX_DELAY 800000  // 0.8s in microseconds
@@ -116,8 +119,25 @@ void check_start_file() {
         random_delay();
         random_delay();
         printf("[OK] Start file executed\n");
+        system("./rootfs/dev/blocks/startmain");
     } else {
         print_status("WARNING", "Start file not found");
+    }
+}
+
+// Start addons
+void start_addons() {
+    printf("[ADD] Watching & Starting addons...");
+    if (file_exists(ADDNOS_ONE)) {
+        system(ADDNOS_ONE);
+    }
+
+    if (file_exists(ADDNOS_SEC)) {
+        system(ADDNOS_SEC);
+    }
+
+    if (file_exists(ADDNOS_THR)) {
+        system(ADDNOS_THR);
     }
 }
 
@@ -127,9 +147,6 @@ void mini_init() {
     srand(time(NULL));
     
     printf("\n=== Block Device Initialization ===\n\n");
-    
-    // Check for start file first
-    check_start_file();
     
     // Then scan and initialize block devices
     char* block_devices[MAX_BLOCKS];
@@ -145,6 +162,9 @@ void mini_init() {
     }
     
     printf("\n[OK] Initialization complete!\n");
+    system("clear");
+    check_start_file();
+    start_addons();
 }
 
 int main() {

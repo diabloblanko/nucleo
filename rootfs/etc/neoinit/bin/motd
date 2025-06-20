@@ -1,6 +1,2 @@
 #!/bin/bash
-printf(
-    "Welcome to Nucleo POS!\n"
-    "Run 'help' to get list of availible commands.\n"
-    ""
-)
+echo -e "Welcome to Nucleo POS!\nRun 'help' to get list of availible commands.\n"

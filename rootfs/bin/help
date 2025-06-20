@@ -1,0 +1,3 @@
+#!/bin/bash
+echo "Availible commands:"
+ls ./rootfs/bin
