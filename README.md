@@ -38,7 +38,6 @@ Cons:
 ### RInit
 Pros:
 * Python-written shell, if you are into it.
-* Fast
 * Working with blocks
 * C-Written
 Cons:
