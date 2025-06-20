@@ -7,8 +7,8 @@
 #include <time.h>
 #include <stdbool.h>
 
-#define BLOCKS_DIR "/dev/blocks/"
-#define START_FILE "/dev/blocks/startmain"
+#define BLOCKS_DIR "./rootfs/dev/blocks"
+#define START_FILE "./rootfs.dev/blocks/startmain"
 #define MAX_BLOCKS 32
 #define MIN_DELAY 100000  // 0.1s in microseconds
 #define MAX_DELAY 800000  // 0.8s in microseconds
@@ -150,4 +150,4 @@ void mini_init() {
 int main() {
     mini_init();
     return 0;
-} // bye me commit
+} // bye me co

@@ -1,0 +1,13 @@
+#!/bin/bash
+#init="rinit"
+Init=$(cat .init.conf)
+while [ true ]; do
+    #read -p "Choose: rinit or neoinit:: " sysVInit
+    if [ $Init == "rinit" ]; then
+        ./rootfs/usr/src/rinit/rinit-main
+    elif [ $Init == "neoinit" ]; then
+        #tut sam
+    else
+        echo "Nucleo::WARNING::Init not found!"
+    fi
+done

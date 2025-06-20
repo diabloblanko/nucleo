@@ -1,4 +1,6 @@
 #!/bin/bash
 printf(
-    "Nucleo"
+    "Welcome to Nucleo POS!\n"
+    "Run 'help' to get list of availible commands.\n"
+    ""
 )
