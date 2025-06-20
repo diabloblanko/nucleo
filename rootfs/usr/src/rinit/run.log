@@ -1,0 +1,7 @@
+[Fri Jun 20 11:24:55 2025] INFO: Logging system initialized
+[Fri Jun 20 11:24:55 2025] INFO: Mini-init system starting
+[Fri Jun 20 11:24:55 2025] INFO: Scanning for block devices
+[Fri Jun 20 11:24:55 2025] INFO: Block device scan completed
+[Fri Jun 20 11:24:55 2025] WARNING: No block devices found
+[Fri Jun 20 11:24:55 2025] INFO: rinit system shutting down
+[Fri Jun 20 11:24:55 2025] INFO: Shutting down logging system
