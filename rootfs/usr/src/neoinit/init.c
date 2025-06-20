@@ -20,9 +20,9 @@
 
 int version() {
     printf(
-    " _   _           ___       _ _         NeoInit V1\n"
+    " _   _           ___       _ _         NeoInit \n"
     "| \\ | | ___  ___|_ _|_ __ (_) |_       Written by DiabloBlanko\n"
-    "|  \\| |/ _ \\/ _ \\| || '_ \\| | __|      Build :: x86_64-nucleo-neoinit-v1-b1\n"
+    "|  \\| |/ _ \\/ _ \\| || '_ \\| | __|      Build :: x86_64-nucleo-neoinit-v1\n"
     "| |\\  |  __/ (_) | || | | | | |_ \n"
     "|_| \\_|\\___|\\___/___|_| |_|_|\\__|\n");
     return 0; }
