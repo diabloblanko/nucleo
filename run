@@ -6,7 +6,8 @@ while [ true ]; do
     if [ $Init == "rinit" ]; then
         ./rootfs/usr/src/rinit/rinit-main
     elif [ $Init == "neoinit" ]; then
-        #tut sam
+        ./rootfs/usr/src/neoinit/init2
+        ./rootfs/usr/src/neoinit/neoinit_service_start
     else
         echo "Nucleo::WARNING::Init not found!"
     fi
