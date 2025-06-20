@@ -33,6 +33,8 @@ Pros:
 * Faster
 * Easy service managing tools
 * C-Written
+
+
 Cons:
 * May be not enough functions
 ### RInit
@@ -40,6 +42,8 @@ Pros:
 * Python-written shell, if you are into it.
 * Working with blocks
 * C-Written
+
+
 Cons:
 * Bigger than NeoInit
 * No service managing tools
