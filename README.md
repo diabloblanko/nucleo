@@ -29,8 +29,8 @@ You can choose of two different inits: NeoInit and RInit
 ### NeoInit
 Pros:
 * C-Written shell, if you are into it.
-* Simple
-* Lightweight
+* Simple && lightweight
+* Faster
 * Easy service managing tools
 * C-Written
 Cons:
@@ -44,3 +44,9 @@ Pros:
 Cons:
 * Bigger than NeoInit
 * No service managing tools
+
+## Fetchs
+### Neoinit -v
+![ee](https://i.ibb.co/JFgHnZB0/neoinit-ffe.png)
+### Fetch(ported from WhiteDevilOS)
+![ee](https://i.ibb.co/v6KLz2CL/nucleo-wdf.png)
