@@ -49,3 +49,5 @@ Cons:
 ![ee](https://i.ibb.co/JFgHnZB0/neoinit-ffe.png)
 ### Fetch(ported from WhiteDevilOS)
 ![ee](https://i.ibb.co/v6KLz2CL/nucleo-wdf.png)
+### Whitedevilfetch(with RInit logs)
+![ee](https://i.ibb.co/Kcjv3bg2/rinit.png)
