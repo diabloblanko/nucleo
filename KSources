@@ -1,0 +1,6 @@
+inter 1
+
+main:
+  ${cli.term} ** ${set** name="nucleo"}
+  NAME* name = ${cli.term}
+  int 0
