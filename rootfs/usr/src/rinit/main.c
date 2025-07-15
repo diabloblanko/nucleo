@@ -7,10 +7,6 @@
 #include <time.h>
 #include <stdbool.h>
 
-#define BLOCKS_DIR "./rootfs/dev/blocks"
-#define ADDNOS_ONE "./rootfs/dev/blocks/addons/addons1"
-#define ADDNOS_SEC "./rootfs/dev/blocks/addons/addons2"
-#define ADDNOS_THR "./rootfs/dev/blocks/addons/addons3"
 #define START_FILE "./rootfs/dev/blocks/startmain"
 #define MAX_BLOCKS 32
 #define MIN_DELAY 100000  // 0.1s in microseconds
