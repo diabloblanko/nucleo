@@ -1,0 +1,5 @@
+#!/bin/sh
+f=$(cat ./rootfs/etc/hostname)
+echo "logined as $f"
+echo "entered to a root mode"
+echo

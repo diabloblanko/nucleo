@@ -4,7 +4,7 @@ import os
 while True:
     f_read = open("./rootfs/etc/hostname")
     f = f_read.read()
-    cmd = input(f"root@{f}::> ")
+    cmd = input(f"[root@{f}]# ")
     if cmd == "exit":
         break
     else:

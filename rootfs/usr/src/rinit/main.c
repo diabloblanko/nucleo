@@ -7,10 +7,16 @@
 #include <time.h>
 #include <stdbool.h>
 
-#define START_FILE "./rootfs/dev/blocks/startmain"
-#define MAX_BLOCKS 32
+#define START_FILE "./rootfs/etc/rinit/startmain"
+#define MAX_BLOCKS 128
 #define MIN_DELAY 100000  // 0.1s in microseconds
 #define MAX_DELAY 800000  // 0.8s in microseconds
+
+// services
+void start_services() {
+    printf("Starting services\n");
+    system("./rootfs/etc/rinit/*");
+}
 
 // Random delay between MIN_DELAY and MAX_DELAY
 void random_delay() {
@@ -160,7 +166,7 @@ void mini_init() {
     printf("\n[OK] Initialization complete!\n");
     system("clear");
     check_start_file();
-    start_addons();
+    start_services();
 }
 
 int main() {
