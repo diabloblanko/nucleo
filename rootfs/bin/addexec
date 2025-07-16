@@ -1,5 +1,0 @@
-#!/bin/sh
-echo "==> Full packs update"
-chmod 775 ./rootfs/bin/*
-echo "==> New applications chmod'ed!"
-echo
