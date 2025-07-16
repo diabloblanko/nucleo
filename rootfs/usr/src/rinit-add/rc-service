@@ -1,0 +1,20 @@
+#!/bin/bash
+help_msg="
+add    - add a service
+rm     - remove service
+src    - watch service src 
+         do not try with binary
+watch  - show all services
+help   - show this message
+"
+if [ $1=="add" ]; then
+  cp ./rootfs/bin/$2 ./rootfs/etc/rinit/
+elif [ $1=="rm" ]; then
+  rm ./rootfs/etc/rinit/$2
+elif [ $1=="src" ]; then
+  cat ./rootfs/etc/rinit/$2
+elif [ $1=="watch"]; then
+  ls ./rootfs/etc/rinit
+elif [ $1=="help"]; then
+  echo "$help_msg"
+fi
